@@ -9,6 +9,13 @@ int main()
     int result;
 
     result = firstVariable + secondVariable + 1;
+
+    printf("Primeira variável: %d\n", firstVariable);
+    printf("Segunda variável: %d\n", secondVariable);
+
+    printf("Resultado: %d\n", result);
+    printf("Primeira: %d, Segunda %d, Resultado %d\n", firstVariable, secondVariable, result);
+
     //firstVariable = firstVariable + secondVariable;
     //firstVariable += secondVariable;
     //firstVariable -= secondVariable;
@@ -24,7 +31,7 @@ int main()
     //firstVariable = firstVariable / 1;
 
     //printf("%d", firstVariable); // %d => mask for display values of integer
-    printf("%d", result);
+    //printf("%d", result);
 
     return 0;
 }
