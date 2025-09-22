@@ -1,6 +1,7 @@
 #include <stdio.h> // informar o que iremos utilizar
 #include <stdlib.h>
 
+// entry point
 int main() {
     // código que estiver entre as chaves será executado pela máquina
 
