@@ -62,8 +62,8 @@ int main()
         }
 
         for (j = 0; j < 3; j++) {
-            current_smaller = v[i][0];
-            new_value_smaller = v[i][j];
+            current_smaller = v[i][0]; // 5
+            new_value_smaller = v[i][j]; // 3
             if (current_smaller > new_value_smaller) {
                 current_smaller = new_value_smaller;
             }
