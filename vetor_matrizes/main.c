@@ -10,7 +10,6 @@
 typedef struct {
     int v[3][3];
     char name;
-    int age;
 } s_pessoa;
 
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 (valor anterior, atual, novo)
@@ -19,6 +18,7 @@ int main()
 {
     int v[3][3], i, j, sum = 0, new_value_bigger, current_bigger, new_value_smaller, current_smaller;
 
+    /*
     v[0][0] = 1;
     v[0][1] = 2;
     v[0][2] = 3;
@@ -30,6 +30,16 @@ int main()
     v[2][0] = 4;
     v[2][1] = 11;
     v[2][2] = 14;
+   */
+
+    for (int c = 0; c < 3; c++) {
+        printf("bloco %d%\n", c);
+        for (int r = 0; r < 3; r++) {
+            printf("Digite o valor da posicao: ");
+            scanf("%d", &v[c][r]);
+        }
+        printf("\n");
+    }
 
     for (i = 0; i < 3; i++) {
         printf("bloco %d: ", i);
@@ -40,6 +50,7 @@ int main()
         }
 
         printf("\nsoma das linhas: %d", sum);
+        sum = 0;
         printf("\n");
 
         for (j = 0; j < 3; j++) {
