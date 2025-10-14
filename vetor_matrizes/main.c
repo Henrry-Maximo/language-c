@@ -37,53 +37,72 @@ int main()
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 2:
+            case 1:
                 strcpy(message, "Digite o segundo valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 3:
+            case 2:
                 strcpy(message, "Digite o terceiro valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 4:
+            case 3:
                 strcpy(message, "Digite o quarto valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 5:
+            case 4:
                 strcpy(message, "Digite o quinto valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 6:
+            case 5:
                 strcpy(message, "Digite o sexto valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 7:
+            case 6:
                 strcpy(message, "Digite o setimo valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 8:
+            case 7:
                 strcpy(message, "Digite o oitavo valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
-            case 9:
+            case 8:
                 strcpy(message, "Digite o nono valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 9:
+                strcpy(message, "Digite o decimo valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 10:
+                strcpy(message, "Digite o decimo valor: ");
                 printf("%s", message);
                 scanf("%d", &n[r]);
                 break;
         }
     }
 
+    for (int b = 0; b < 10; b++) {
+            int result = n[b] % 2;
+            if (result == 0) {
+                printf("O numero %d eh par. O resto da divisao por 2 eh: %d\n", n[b], result);
+            } else {
+                printf("O numero %d eh impar. O resto da divisao por 2 eh: %d\n", n[b], result);
+            }
+    }
+
     for (int c = 0; c < 3; c++) {
         printf("bloco %d\n", c);
         for (int r = 0; r < 3; r++) {
-            printf("Digite o valor da posicao: ");
+            printf("digite o valor da posicao: ");
             scanf("%d", &v[c][r]);
         }
         printf("\n");
