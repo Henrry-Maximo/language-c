@@ -2,22 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-// imprimir valores da matriz em sequencia, matriz index 0 até 5
-// realizar a soma dos valores
-// encontrar o menor valor
-// encontrar o maior valor
-
-typedef struct {
-    int v[3][3];
-    char name;
-} s_pessoa;
-
-// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 (valor anterior, atual, novo)
+/*
+    imprimir valores da matriz em sequencia, matriz index 0 até 5
+    realizar a soma dos valores
+    encontrar o menor valor
+    encontrar o maior valor
+*/
 
 int main()
 {
-    // x0324kmsxsadw3
-    int v[3][3], i, j, sum = 0, new_value_bigger, current_bigger, new_value_smaller, current_smaller;
+    int v[3][3], n[10], i, j, sum = 0, new_value_bigger, current_bigger, new_value_smaller, current_smaller;
 
     /*
     v[0][0] = 1;
@@ -32,6 +26,59 @@ int main()
     v[2][1] = 11;
     v[2][2] = 14;
    */
+
+    //printf("Digite 10 valores: ");
+    char message[20];
+
+    for (int r = 0; r < 10; r++) {
+        switch (r) {
+            case 0:
+                strcpy(message, "Digite o primeiro valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 2:
+                strcpy(message, "Digite o segundo valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 3:
+                strcpy(message, "Digite o terceiro valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 4:
+                strcpy(message, "Digite o quarto valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 5:
+                strcpy(message, "Digite o quinto valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 6:
+                strcpy(message, "Digite o sexto valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 7:
+                strcpy(message, "Digite o setimo valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 8:
+                strcpy(message, "Digite o oitavo valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+            case 9:
+                strcpy(message, "Digite o nono valor: ");
+                printf("%s", message);
+                scanf("%d", &n[r]);
+                break;
+        }
+    }
 
     for (int c = 0; c < 3; c++) {
         printf("bloco %d\n", c);
