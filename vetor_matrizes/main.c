@@ -16,6 +16,7 @@ typedef struct {
 
 int main()
 {
+    // x0324kmsxsadw3
     int v[3][3], i, j, sum = 0, new_value_bigger, current_bigger, new_value_smaller, current_smaller;
 
     /*
@@ -33,7 +34,7 @@ int main()
    */
 
     for (int c = 0; c < 3; c++) {
-        printf("bloco %d%\n", c);
+        printf("bloco %d\n", c);
         for (int r = 0; r < 3; r++) {
             printf("Digite o valor da posicao: ");
             scanf("%d", &v[c][r]);
@@ -53,17 +54,17 @@ int main()
         sum = 0;
         printf("\n");
 
+        current_bigger = v[i][0];
         for (j = 0; j < 3; j++) {
-            current_bigger = v[i][0];
             new_value_bigger = v[i][j];
             if (current_bigger < new_value_bigger) {
                 current_bigger = new_value_bigger;
             }
         }
 
+        current_smaller = v[i][0];
         for (j = 0; j < 3; j++) {
-            current_smaller = v[i][0]; // 5
-            new_value_smaller = v[i][j]; // 3
+            new_value_smaller = v[i][j];
             if (current_smaller > new_value_smaller) {
                 current_smaller = new_value_smaller;
             }
