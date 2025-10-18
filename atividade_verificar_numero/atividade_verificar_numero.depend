@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1760251058 source:c:\users\henrr\desktop\workspace\estudos\cursos\projetos\language-c\atividade_verificar_numero\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<pthread.h>
+	<ctype.h>
+	<signal.h>
+	<sys/types.h>
+
