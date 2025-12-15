@@ -6,6 +6,12 @@ void addOne(int* valor) {
     //valor = valor + 1;
     //valor += 1;
 
+    v[10][10];
+
+    for (int i = 0; i < v[10][10]; i++) {
+        for ()
+    }
+
     printf("Valor dentro da funcao addOne: %d\n", *valor);
 }
 
