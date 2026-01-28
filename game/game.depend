@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
-1765841912 source:c:\users\henrr\desktop\workspace\estudos\cursos\projetos\language-c\game\main.c
+1767048488 source:c:\users\henrr\desktop\workspace\estudos\cursos\projetos\language-c\game\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1769560744 source:c:\users\henrr\desktop\works\workspace\estudos\cursos\projetos\language-c\game\main.c
 	<stdio.h>
 	<stdlib.h>
 
