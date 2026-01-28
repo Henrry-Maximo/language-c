@@ -32,16 +32,9 @@ void exibeTabuleiro(char tabuleiro[3][3])
     printf("\n\n");
 };
 
-int main()
+void jogada(char tabuleiro[3][3], char player)
 {
-    char tabuleiro[3][3];
-    char c1 = 'X';
-    char c2 = 'O';
-    char player = c1;
     int x, y;
-
-    zeraTabuleiro(tabuleiro);
-    exibeTabuleiro(tabuleiro);
 
     while (1)
     {
@@ -56,10 +49,7 @@ int main()
         else if (tabuleiro[x][y] == ' ')
         {
             tabuleiro[x][y] = player;
-
-            // quando usamos uma linha embaixo do bloco if, podemos remover as chaves
-            if (player == c1) player = c2;
-            else player = c1;
+            break;
         }
         else
         {
@@ -67,7 +57,25 @@ int main()
         }
 
         // tabuleiro[x][y] = c1;
+    }
+}
 
+int main()
+{
+    char tabuleiro[3][3];
+    char c1 = 'X';
+    char c2 = 'O';
+    char player = c1;
+
+    zeraTabuleiro(tabuleiro);
+    exibeTabuleiro(tabuleiro);
+
+    while (1)
+    {
+        jogada(tabuleiro, player);
+        // quando usamos uma linha embaixo do bloco if, podemos remover as chaves
+        if (player == c1) player = c2;
+        else player = c1;
         exibeTabuleiro(tabuleiro);
     }
 
