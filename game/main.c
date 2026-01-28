@@ -37,6 +37,7 @@ int main()
     char tabuleiro[3][3];
     char c1 = 'X';
     char c2 = 'O';
+    char player = c1;
     int x, y;
 
     zeraTabuleiro(tabuleiro);
@@ -48,13 +49,20 @@ int main()
         scanf("%d %d", &x, &y);
 
         // usuário digitou uma posição que não existe
-        if ((x > 2 || y > 2) || (x < 0 || y < 0)) {
+        if ((x > 2 || y > 2) || (x < 0 || y < 0))
+        {
             printf("Coordenadas invalidas\n");
         }
-        else if (tabuleiro[x][y] == ' ') {
-                tabuleiro[x][y] = c1;
+        else if (tabuleiro[x][y] == ' ')
+        {
+            tabuleiro[x][y] = player;
+
+            // quando usamos uma linha embaixo do bloco if, podemos remover as chaves
+            if (player == c1) player = c2;
+            else player = c1;
         }
-        else {
+        else
+        {
             printf("Essa posicao nao pode ser utilizada\n");
         }
 
